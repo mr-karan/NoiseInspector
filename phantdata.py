@@ -4,11 +4,11 @@ from twilio.rest import TwilioRestClient
 from time import sleep
  
 # Your Account Sid and Auth Token from twilio.com/user/account
-account_sid = "AC70e3378bc320d80f6d7de6f8c621cc91"
-auth_token  = "af1003842796fd42560d7dae9565ed88"
+account_sid = ""
+auth_token  = ""
 client = TwilioRestClient(account_sid, auth_token)
 
-p = Phant(public_key='q5JMKnDJKXCMnjbYr0lG', fields=['temp'], private_key='BVBdMRDBMAt60G1J8WV5')
+p = Phant(public_key='q5JMKnDJKXCMnjbYr0lG', fields=['temp'], private_key='')
 
 while(True):
 	data = p.get()
